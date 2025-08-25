@@ -114,7 +114,7 @@ Make sure to use this only for local testing, and never in production.
   - Set the AWS_ENDPOINT_URL environment variable:
 Set `AWS_ENDPOINT_URL=http://localhost.localstack.cloud:4566`. This is the recommended approach as it directly points your AWS client to the LocalStack endpoint.
   - Disable certificate validation (not recommended):
-If the first option isn't feasible, you can disable certificate validation by exporting an empty AWS_CA_BUNDLE variable(`export AWS_CA_BUNDLE=""`).  However, note that this will cause a warning to be raised for every command. You can suppress these warnings by setting the PYTHONWARNINGS=ignore environment variable
+If the first option isn't feasible, you can disable certificate validation by exporting an empty AWS_CA_BUNDLE variable(`export AWS_CA_BUNDLE=""`).  However, note that this will cause a warning to be raised for every command. You can suppress these warnings by setting the `PYTHONWARNINGS=ignore` environment variable.
 
 ## Troubleshooting
 
