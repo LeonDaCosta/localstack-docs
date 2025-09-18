@@ -22,38 +22,38 @@ This guide is designed for users new to network rules and assumes you are alread
 
 You can create a network rule using the `CREATE NETWORK RULE` statement. The example below creates a network rule that allows ingress traffic from a specific IPv4 address:
 
-:::sql showLineNumbers
+```sql showLineNumbers
 CREATE NETWORK RULE allow_ip_rule
   TYPE = IPV4
   MODE = INGRESS
   VALUE_LIST = ('192.168.1.1')
   COMMENT = 'Allow traffic from 192.168.1.1';
-:::
+```
 
 ### Show network rules
 
 You can list all network rules in your schema using the `SHOW NETWORK RULES` statement:
 
-:::sql
+```sql
 SHOW NETWORK RULES;
-:::
+```
 
 ### Alter a network rule
 
 You can modify an existing network rule using the `ALTER NETWORK RULE` statement. The example below updates the comment:
 
-:::sql
+```sql
 ALTER NETWORK RULE allow_ip_rule
   SET COMMENT = 'Updated description';
-:::
+```
 
 ### Drop a network rule
 
 You can delete an existing network rule with the `DROP NETWORK RULE` statement:
 
-:::sql
+```sql
 DROP NETWORK RULE allow_ip_rule;
-:::
+```
 
 :::note
 ## Limitations
