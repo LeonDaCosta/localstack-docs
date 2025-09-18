@@ -49,7 +49,7 @@ SELECT 123;
 
 4. Verify execution: In the emulator logs, you should see the executed query:
 
-```
+```sql
 Running query (account/DB/schema TEST/TEST/public): SELECT 123
 ```
 
