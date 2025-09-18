@@ -70,10 +70,10 @@ DROP MASKING POLICY ssn_mask;
 
 This deletes the policy definition from the emulator.
 
-:::
+:::note
 ## Limitations
 
-- LocalStack currently supports only the CRUD operations (CREATE, ALTER, SHOW, DROP) for masking policies.
+- LocalStack currently supports only the CRUD operations (`CREATE`, `ALTER`, `SHOW`, `DROP`) for masking policies.
 - Applying masking policies to tables and enforcing them during queries is not supported yet.
 - Use this feature primarily for validating schema definitions and testing IaC workflows.
 :::
