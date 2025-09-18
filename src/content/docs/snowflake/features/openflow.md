@@ -30,7 +30,7 @@ The first load may take some time, as Apache NiFi dependencies are downloaded an
 
 Once the UI is available, you can create and configure NiFi processors directly in your browser.
 
-## Example: Running a query with ExecuteSQL
+### Running a query with ExecuteSQL
 The following example demonstrates how to run a simple query against the Snowflake emulator using the `ExecuteSQL` processor.
 
 1. Add an ExecuteSQL processor: Drag the `ExecuteSQL` processor onto the canvas in the Openflow UI.
