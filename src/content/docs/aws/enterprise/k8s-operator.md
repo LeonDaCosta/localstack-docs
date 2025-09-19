@@ -17,8 +17,8 @@ The operator is designed to simplify the deployment and management of LocalStack
 To install the K8s operator, run the following commands:
 
 ```bash
-kubectl apply -f https://raw.githubusercontent.com/localstack/localstack-k8s-operator/v0.2.0/release/crds.yaml
-kubectl apply -f https://raw.githubusercontent.com/localstack/localstack-k8s-operator/v0.2.0/release/controller.yaml
+kubectl apply -f https://docs.localstack.cloud/artifacts/k8s-operator/v0.3.3/crd.yaml
+kubectl apply -f https://docs.localstack.cloud/artifacts/k8s-operator/v0.3.3/controller.yaml
 ```
 
 You can then deploy a LocalStack instance by storing the following file content as `localstack.yml` and applying it against the cluster via `kubectl apply -f localstack.yml`.
